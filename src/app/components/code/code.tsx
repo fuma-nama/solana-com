@@ -14,7 +14,7 @@ export async function Code({ codeblock }: { codeblock: RawCode }) {
   const title = getTitle(codeblock.meta);
 
   return (
-    <div className="border rounded border-ch-border overflow-hidden my-4 relative">
+    <div className="border rounded-sm border-ch-border overflow-hidden my-4 relative">
       {title ? (
         <div
           className={cn(
@@ -46,7 +46,7 @@ export async function Code({ codeblock }: { codeblock: RawCode }) {
         handlers={[mark]}
         style={highlighted.style}
         code={highlighted}
-        className="overflow-auto px-0 py-3 m-0 rounded-none !bg-ch-background font-mono selection:bg-ch-selection text-sm"
+        className="overflow-auto px-0 py-3 m-0 rounded-none bg-ch-background! font-mono selection:bg-ch-selection text-sm"
       />
     </div>
   );

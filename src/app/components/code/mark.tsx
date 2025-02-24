@@ -25,7 +25,7 @@ export const mark: AnnotationHandler = {
           boxShadow: `0 0 0 1px rgb(from ${color} r g b / 0.5)`,
           backgroundColor: `rgb(from ${color} r g b / 0.13)`,
         }}
-        className="rounded px-0.5 py-0 -mx-0.5"
+        className="rounded-sm px-0.5 py-0 -mx-0.5"
       >
         {children}
       </span>

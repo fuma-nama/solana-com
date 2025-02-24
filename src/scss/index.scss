@@ -5,7 +5,7 @@
 @import "solana-variables";
 
 // Bootstrap core
-@import "~bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 // Solana core & page-specific styles
 @import "solana";
@@ -15,8 +15,8 @@
 @import "solana/modals";
 
 // Solana-lib
-@import "~@solana-foundation/solana-lib/dist/styles.css";
+@import "@solana-foundation/solana-lib/dist/styles.css";
 
 // Algolia docsearch
-@import "~@docsearch/css";
+@import "@docsearch/css";
 @import "./docsearch.scss";

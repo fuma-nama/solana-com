@@ -1,6 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+ 
+@source '../../node_modules/fumadocs-ui/dist/**/*.js';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-ch-background: hsl(var(--fd-secondary) / 0.5);
+  --color-ch-border: hsl(var(--fd-border));
+  --color-ch-selection: var(--ch-20);
+  --color-ch-tab-active-foreground: var(--ch-4);
+  --color-ch-tab-inactive-foreground: var(--ch-15);
+  --color-ch-line-number: var(--ch-26);
+  --color-ch-tabs-background: hsl(var(--fd-muted));
+  --color-ch-active-border: var(--tw-prose-links);
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 .fumadocs {
   --fd-nav-height: 76px;
