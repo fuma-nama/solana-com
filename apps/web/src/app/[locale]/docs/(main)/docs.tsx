@@ -25,7 +25,6 @@ export async function MainDocsPage({
       hideTableOfContents={page.data.hideTableOfContents}
       pageTree={docsSource.pageTree[locale]}
       href={page.url}
-      lastModified={page.data.lastModified}
       locale={locale}
     >
       <MDX components={mdxComponents} />
